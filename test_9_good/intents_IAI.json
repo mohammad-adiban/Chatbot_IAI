@@ -1,0 +1,1320 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "How are you?",
+        "Good day",
+        "What's up",
+        "Hey",
+        "Is anyone there?",
+        "Good morning",
+        "Good evening",
+        "Good afternoon",
+        "Hi there"
+      ],
+      "responses": [
+        "Hi there, how can I help?",
+        "Greetings! How can I assist?",
+        "Hello, glad you're here! How can I assist you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "I'm leaving",
+        "End",
+        "Stop talking",
+        "Farewell"
+      ],
+      "responses": [
+        "Goodbye!",
+        "See you later, have a great day!",
+        "Bye! Hope to see you again soon.",
+        "Farewell, contact us anytime you need."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "ok",
+        "Okay",
+        "Ok!",
+        "Okay!",
+        "Thanks",
+        "Thank you",
+        "Thanks a lot",
+        "Thank you very much",
+        "I appreciate it",
+        "Thanks for your help",
+        "Great",
+        "great!",
+        "Great!",
+        "I am glad with your response"
+      ],
+      "responses": [
+        "Glad to help!",
+        "My pleasure to assist you!",
+        "Anytime, happy to assist!"
+      ]
+    },
+    {
+      "tag": "language",
+      "patterns": [
+        "what languages can you speak?",
+        "do you speak english?",
+        "Can you speak english?",
+        "What is your language",
+        "What is your primary language of communication?",
+        "Which languages are you proficient in?",
+        "Is English among the languages you speak?",
+        "Are you capable of communicating in English?",
+        "What language do you use?",
+        "What language do you primarily communicate in?"
+
+      ],
+      "responses": [
+        "At the moment, I'm capable of conversing and responding in English only."
+      ]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "What services do you offer?",
+        "Tell me about your services",
+        "List of services",
+        "Can you help me with your services?"
+      ],
+      "responses": [
+        "We offer a wide range of services including A, B, and C. How can I assist you further?",
+        "Our services include A, B, and C. Which one are you interested in?"
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "How do I pay?",
+        "Payment methods",
+        "Can I pay using a credit card?",
+        "Do you accept PayPal?",
+        "Is cash payment possible?"
+      ],
+      "responses": [
+        "We accept several payment methods including credit cards, PayPal, and direct bank transfers.",
+        "You can pay using credit cards, PayPal, or even in cash at our office.",
+        "Yes, we accept both PayPal and credit card payments. Choose the one that's convenient for you."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "I want to leave feedback",
+        "How can I give feedback?",
+        "Can I speak to a manager?",
+        "I have some comments"
+      ],
+      "responses": [
+        "Your feedback is important to us. Please share your thoughts!",
+        "We're always looking to improve. Please tell us more about your experience.",
+        "To leave feedback, simply tell me what's on your mind. We'll make sure it reaches our management team."
+      ]
+    },
+    {
+      "tag": ["support", "questions", "questions"],
+      "patterns": [
+        "I need help",
+        "Support options",
+        "Are you able to assist me?",
+        "Help me out",
+        "I have a problem",
+        "I have some questions",
+        "I have a question"
+      ],
+      "responses": [
+        "Sure, I'm here to help.",
+        "I'd be happy to assist. Could you provide more details on the issue?",
+        "Tell me more about the issue you're facing, and I'll do my best to help."
+      ]
+    },
+    {
+      "tag": ["product", "products"],
+      "patterns": [
+        "Tell me about your products",
+        "Product information",
+        "What products do you offer?",
+        "Product catalog",
+        "May I know your products?",
+        "What kind of products do you have?",
+        "could you introduce your products?",
+        "Please provide details about your products.",
+        "I'd like information regarding your products.",
+        "What specific products are available?",
+        "Do you have a catalog of your products?",
+        "Could you share information about your product range?",
+        "What varieties of products are in your inventory?",
+        "Can you give an introduction to your product line?"
+      ],
+      "responses": [
+        "We offer a wide range of products including VDS, InteractiveAI, FAST, Headwave and Teleport. You can explore our full product catalog on our website: <a href=\"https://bluware.com/\">Click here</a>"
+      ]
+    },
+    {
+      "tag": ["load huespace"],
+      "patterns": [
+        "How can I load huespace",
+        "How can I load huespace?",
+        "What should I do if HueSpace will not load?",
+        "Why does not HueSpace load?",
+        "What to do if HueSpace does not load?",
+        "Loading problem weith HueSpace",
+        "What steps are needed to load HueSpace?",
+        "Could you guide me on how to load HueSpace?",
+        "What actions should I take when HueSpace fails to load?",
+        "What could be preventing HueSpace from loading?",
+        "How should I proceed when HueSpace won't load?",
+        "How to resolve loading issues with HueSpace?"
+      ],
+      "responses": [
+        "The HueSpace Core Library is loaded at runtime when you start a HueSpace based application or when you import hue from Python. HueSpace tries to determine the location of the HueSpace core library automatically, but if for some reason it cannot be found, you will see an error that starts with 'Failed to load libhuespace3.so' on Linux or 'Failed to load HueSpace3.dll' on Windows, followed by a message about making sure that the HueSpace core library and its dependencies are accessible via your path (i.e. the environment variable LD_LIBRARY_PATH on Linux or PATH on Windows). If you have confirmed that the HueSpace core library is accessible but it still fails to load, it may be helpful to check that its dependent libraries are also accessible. This can be done using the command line tool ldd on Linux or using a dependency walker such as dependencies on Windows."
+      ]
+    },
+    {
+      "tag": ["create Huespace"],
+      "patterns": [
+        "How do I create a HueSpace Project?",
+        "How can I create a HueSpace Project?",
+        "Create a project of HueSpce",
+        "What should I do to create a Huespace project?",
+        "Let me know how to create HuesSpce project?",
+        "Creating problem with Huespace",
+        "What are the steps for initiating a HueSpace Project?",
+        "What is the process for creating a HueSpace Project?",
+        "Initiate the creation of a HueSpace Project.",
+        "What steps are involved in creating a Huespace project?",
+        "Could you provide guidance on creating a HueSpace project?",
+        "Encountering issues with creating a HueSpace project."
+      ],
+      "responses": [
+        "The Project class is normally the top-level entry-point for managing HueSpace objects when creating HueSpace applications. However, actually working with and/or creating a project requires going through both a Workspace and a Scene object instance as well.\n\nOn the main thread object list created by default when the proxy interface is first initialized through one of the proxy APIs, a default project instance is created.\nThe following code samples illustrate how to get to that default project object in various languages.\n\nC++:\n<pre><code>#include 'HueSpace3/Workspace.h'\n#include 'HueSpace3/SceneManager.h'\n#include 'HueSpace3/ProjectManager.h'\nauto project = Hue::ProxyLib::Workspace::Instance()->Scenes()[0]->Projects()[0];</pre></code>\n\nPython:\n<pre><code>import hue\nproject = hue.Workspace.instance().scenes[0].projects[0]</pre></code>\n\nIt is possible to access the proxy API on multiple threads and to work with multiple object lists on the same thread or across threads. In cases other than the one described above (i.e., other than the main thread object list created by default when the proxy interface is first initialized through one of the proxy APIs), a singleton Workspace instance will always be accessible, but a default Scene and Project will not be created. Instead, they must be explicitly created as needed. The following code samples illustrate how to create a Project object in various languages.\n\nC++:\n<pre><code>#include 'HueSpace3/Workspace.h'\n#include 'HueSpace3/SceneManager.h'\n#include 'HueSpace3/ProjectManager.h'\nauto scene = Hue::ProxyLib::Workspace::Instance()->Scenes().Create();\nauto project = scene->Projects().Create();</pre></code>\n\nPython:\n<pre><code>import hue\nscene = hue.Workspace.instance().scenes.createScene()\nproject = scene.projects.createProject()</pre></code>\n\nIt is possible to create multiple scenes and projects (by using the <code>Create()</code>-methods on the object managers).\nHaving multiple project instances in an application can be useful for scoping and isolation of objects, e.g., a viewer-type application might allow for opening multiple datasets, each of which is placed in a separate project, along with visualization objects for that dataset.\nThe original reason for the Scene in the object hierarchy was to allow for using HueSpace for distributed rendering across multiple computers and monitors, which was a use case for an earlier version. For most modern HueSpace applications, referencing the Scene is just something done incidental to getting to the Project objects where the work is really done. It is normal to create a single scene but then to create multiple projects."
+      ]
+    },
+    {
+      "tag": ["proxy", "API", "Proxy API"],
+      "patterns": [
+        "Do I need to delete HueSpace proxy API objects?",
+        "delete proxy API",
+        "What should I do with proxy API",
+        "What is HueSpace proxy API objects?",
+        "Remove the proxy API.",
+        "What action should I take regarding the proxy API?",
+        "Could you explain HueSpace proxy API objects?",
+        "Is it necessary to remove HueSpace proxy API objects?",
+        "How do I go about deleting proxy API objects?",
+        "What steps should I take concerning proxy API objects?",
+        "Can you define what HueSpace proxy API objects are?",
+        "Should I proceed with removing the proxy API?",
+        "What measures should I consider for handling the proxy API?",
+        "Would you mind clarifying what HueSpace proxy API objects entail?"
+      ],
+      "responses": [
+        "The lifetime of a HueSpace Proxy Object, generally created using one of the Create methods on the various manager types, must be explicitly managed by the client application, even in APIs that provide a garbage collection facility. Deleting a proxy object automatically deletes all child objects in the managers it owns; they need not be individually deleted. See also the documentation for Managers, which discusses explicitly managing the lifetime of Proxy Objects and links to references for deleting objects in each proxy API. \n\nThere are some objects accessible through the proxy APIs that are not Proxy Objects (i.e. they do not derive from that API's ProxyObject type and do not wrap an internal HueSpace object model object), so they are not covered by the rule above. Most such objects are related to the volume data access APIs. \n\nThe entry-point for those APIs is the VolumeDataAccessManager, accessible through e.g. VDS GetVolumeDataAccessManager in the C++ API. The VolumeDataAccessManager instance for a given VDS does NOT need to be explicitly deleted. The VolumeDataAccessManager may be used to create a number of other objects used to read/write VDS data:\n\n\u2022 <code>VolumeDataAccessManager::CreateVolumeDataPageAccessor</code> is used to created a <code>VolumeDataPageAccessor</code>, which MUST be deleted using DestroyVolumeDataPageAccessor\n\n\u2022 <code>VolumeDataPageAccessor::CreatePage</code> is used to create a <code>VolumeDataPage</code>, for which <code>VolumeDataPage::Release</code> MUST be called\n\n\u2022 There are many <code>VolumeDataAccessManager</code> methods used to create volume data accessors of various types (e.g. <code>CreateVolumeData2DInterpolatingAccessorR64</code>). These do not need to be explicitly deleted. However, the volume data accessor types are generally implemented using whatever scoped teardown / RAII mechanism is available in the target API so that read-write accessors automatically commit edits even if the Commit method is not explicitly called. For the C++ API, this happens through the normal destructor, for Python through with/as, for .NET through IDisposable / using, and for Java through AutoCloseable / try-with-resources."
+      ]
+    },
+    {
+      "tag": ["VDS introduction", "VDS Documentation", "VDS capability"],
+      "patterns": [
+        "what is VDS?",
+        "vds",
+        "What vds is",
+        "let me know about vds",
+        "may I know what vds is?",
+        "what are capabilities of vds?",
+        "how can I know waht vds is",
+        "what features does vds have?",
+        "Please tell me more about VDS",
+        "What are VDS capabilities?",
+        "what capabilities does vds have",
+        "Please introduce VDS to me.",
+        "What does VDS stand for?",
+        "What capabilities does VDS possess?",
+        "What features are inherent in VDS?",
+        "Could you provide additional information about VDS?",
+        "What capabilities are associated with VDS?",
+        "What functionalities does VDS offer?",
+        "I'd like an introduction to VDS, please.",
+        "Could you explain in detail what VDS  is?",
+        "How can I work with vds",
+        "what should I do with vds"
+      ],
+      "responses": [
+        "Bluware Volume Data Store (VDS) is a powerful and flexible storage format for signal data. It was conceived more than 15 years ago to overcome the inherent limitations in existing formats, which were designed for tape storage. The architecture adopts concepts developed in the gaming industry where interactive performance is critical. VDS can support previously unachievable application workflows and end-user experiences.\n\nWhile VDS is generally known for storing seismic data, it is a generic storage system that is built to store any signal data types. For seismic data, VDS can store 2D, 3D, stacked, and pre-stack (migrated and raw gathers) seismic data.\n\nLearn about the capabilities of the storage format and the difference between the two available implementations, the open-source OpenVDS library and the commercial Bluware VDS implementation:\n\nVDS CAPABILITIES:\nVDS has many capabilities which are combined to provide flexibility and performance. It is important to understand these capabilities and the value that each capability delivers. This will also help define the differences between VDS, which is part of Bluware's commercial framework and OpenVDS which is available as open-source through the Open Subsurface Data Universe (OSD). For simplicity, these have been broken into three lifecycles: writing, storing and reading. For more information please see:\n1- <a href=\"https://bluware.com/blog/understanding-the-capabilities-of-bluware-vds-and-openvds/\">Click here</a> \n2- <a href=\"https://osdu.pages.opengroup.org/platform/domain-data-mgmt-services/seismic/open-vds/\">Click here</a>"
+      ]
+    },
+    {
+      "tag": ["openvds", "openvds", "openvds+, openvds+"],
+      "patterns": [
+        "What is open vds?",
+        "What is openvds?",
+        "What is openvds+",
+        "What is open vds+",
+        "What is the difference between openvds and openvds+",
+        "Tell me about openvds+",
+        "Tell me about open vds+",
+        "Compare openvds and openvds+",
+        "Please tell me more about openvds",
+        "Please tell me more about open vds",
+        "Please tell me more about open vds+",
+        "openvds",
+        "openvds+"
+
+      ],
+      "responses": [
+        "OpenVDS can read and write to Bluware Volume Data Store (VDS). VDS is a system for storing signal data. It is widely used for storing seismic data in the cloud or within files. OpenVDS is an open-source implementation of VDS. By using the OpenVDS library, it is possible to read and write VDS. Bluware has an industry-leading compression technology for signal data.\n\nThe OpenVDS+ library provides the ability to write compressed data in VDS format. Note that OpenVDS can read data that has been compressed with Bluware compression or uncompressed (raw) data.\n\nMore information can be found here: <a href=\"https://bluware.com/developers/openvds-faq/\">Click here</a>"
+      ]
+    },
+    {
+      "tag": ["openVDS installation", "install openvds", "install open vds"],
+      "patterns": [
+        "How do I install openvds?",
+        "How do I install open vds?",
+        "How to install openvds?",
+        "How to install open vds?",
+        "how is it possible to install openvds?",
+        "How can I install openvds?",
+        "How can I install open vds?",
+        "Please tell me how I can install open VDS",
+        "Please tell me how I can install openvds",
+        "Please tell me how I can install open vds",
+        "Please let me know how to install open vds",
+        "Could you please explain how open vds can be installed?",
+        "How do I install OpenVDS and its dependencies?",
+        "Are there specific instructions for installing OpenVDS on my operating system (e.g., Windows, macOS, Linux)?",
+        "Is there a recommended package manager I should use to install OpenVDS?"
+      ],
+      "responses": [
+        "The latest version of openvds can be installed using the following command:\n<pre><code>pip install openvds</code></pre>\n\nFor more information please see: <a href=\"https://pypi.org/project/openvds/\">Click here</a>"
+      ]
+    },
+    {
+      "tag": ["openvds+ free, open vds+ free"],
+      "patterns": [
+        "Is openvds+ free?",
+        "openvds+ free?",
+        "is it free to use openvds+?",
+        "is it free to donwnload openvds+?",
+        "Is it possible to freely use open vds+",
+        "Is openvds+ freely available?",
+        "Does OpenVDS+ come at no cost?",
+        "Is OpenVDS+ available for free?",
+        "Does OpenVDS+ have a free-to-use option?",
+        "Can OpenVDS+ be downloaded for free?",
+        "Is OpenVDS+ accessible without charge?",
+        "Is OpenVDS+ freely accessible?"
+      ],
+      "responses": [
+      "OpenVDS+ has been available for free download and unrestricted use since Q1 2021. Please check <a href=\"https://bluware.com/data-solutions/vds/#openvds+\">Click here</a>"
+      ]
+    },
+    {
+      "tag": "open a VDS",
+      "patterns": [
+        "How do I open a VDS file?",
+        "How can I open a VDS file?",
+        "open VDS",
+        "How to open vds?",
+        "How a VDS file can be opened",
+        "How it is possible to open a vds file?",
+        "I want to open a vds data",
+        "What are the methods to open a VDS file?",
+        "Initiate the opening of a VDS file.",
+        "What steps are involved in opening a VDS file?",
+        "How can a VDS file be accessed?",
+        "What's the procedure to open a VDS file?",
+        "open vds"
+      ],
+      "responses": [
+        "Since opening an existing VDS is such a common scenario, there are convenience functions to quickly create a VDS object from file or object store.\n<pre><code>Hue::ProxyLib::VDSManager::RestoreAndSealVDSFromFileName</pre></code><pre><code>Hue::ProxyLib::VDSManager::RestoreVDSFromFileName</pre></code><pre><code>Hue::ProxyLib::VDSManager::RestoreVDSFromURL</pre></code>\n\nUsage examples:\n\nC++:\n<pre><code>#include 'HueSpace3/Workspace.h'\n#include 'HueSpace3/SceneManager.h'\n#include 'HueSpace3/ProjectManager.h'\n#include 'HueSpace3/VDSManager.h'\n\nauto project = Hue::ProxyLib::Workspace::Instance()->Scenes()[0]->Projects().Create();\nauto vds = project.VDSs().RestoreAndSealVDSFromFileName('/path/to/vds/on/disk.vds');</pre></code>\n\nPython:\n<pre><code>import hue\nproject = hue.Workspace.instance().scenes[0].projects.createProject()\nvds = project.VDSs.restoreAndSealVDSFromFileName('/path/to/vds/on/disk.vds')</pre></code>\n\nOpen a VDS file in object store?\nVDS data in object stores can be opened in two possible ways:\n\n1-Create a VDS object and associate it with an instance of the VDSRemote plugin. The VDRemote plugin would also need to be associated with a security plugin. Both the VDSRemote plugin and the security plugin would need to have plugin parameters set to establish connection with the remote dataset.\n2-The preferred approach however is to use the RestoreVDSFromURL API. The API takes a URL (a resource locator string that starts with one of the protocols listed below) and optionally a connection string (which encapsulates the security context for the remote connection.)\n\nFor more information refer to Open a VDS file in object store."
+      ]
+    },
+    {
+      "tag": ["read VDS", "read a vds"],
+      "patterns": [
+        "How do I read a VDS file?",
+        "How can I read a VDS file?",
+        "read VDS",
+        "read a vds?",
+        "reading a vds",
+        "How to read vds?",
+        "I want to read a vds data",
+        "How a VDS file can be read",
+        "How it is possible to read a vds file?",
+        "What are the steps to read a VDS file?",
+        "Please let me know how I can read a vds data",
+        "Please let me know how I can read a vds",
+        "Please let me know how I can read a vds file",
+        "Please let me know how it is possible to read a vds data",
+        "What is the method for reading a VDS file?",
+        "What steps should I follow to open a VDS file?",
+        "Instructions for opening a VDS file?",
+        "Could you guide me on how to access a VDS file?",
+        "What is the process for accessing VDS content?",
+        "What is the procedure for deciphering VDS data?",
+        "I'm interested in accessing VDS data; how can I do this?",
+        "In what manner can one interpret a VDS file?",
+        "Is there a way to navigate through a VDS file's contents?",
+        "Can you explain how to proceed with opening a VDS file?",
+        "I'd appreciate guidance on how to access VDS data.",
+        "Could you show me how to view the contents of a VDS file?",
+        "I need assistance with opening and reading a VDS file; how can I proceed?",
+        "Could you demonstrate the process for extracting information from VDS data?"
+      ],
+      "responses": [
+        "To read a VDS we set up the OpenOptions for the object store the VDS as follow:\nWe first initialize the url and connectionString variables:\n\nPython:\n<pre><code>url = TEST_URL\nconnectionString = TEST_CONNECTION</code></pre>\n\nC++:\n<pre><code>std::string url = TEST_URL;\nstd::string connectionString = TEST_CONNECTION;</code></pre>\n\nWe will then call <code>Open()</code> to get the VDSHandle:\n\nPython:\n<pre><code>try:\n  with openvds.open(url, connectionString) as vds:\n      .\n      .\n      .\nexcept RuntimeError as error:\n    print(f'Could not open VDS: {error}')</code></pre>\n\nC++:\n<pre><code>OpenVDS::Error error;\nOpenVDS::VDSHandle handle = OpenVDS::Open(url, connectionString, error);\n\nif(error.code != 0)\n{\n  std::cerr << 'Could not open VDS: ' << error.string << std::endl;\n  exit(1);\n}</pre></code>\n\nMore information about InteractiveAI can be found here: <a href=\"https://osdu.pages.opengroup.org/platform/domain-data-mgmt-services/seismic/open-vds/getting-started.html#opening-a-vds\">Click here</a>"
+      ]
+    },
+    {
+      "tag": ["VDS metadata", "metadata", "meta data"],
+      "patterns": [
+        "what is vds metda data",
+        "what meta data is?",
+        "what is metadata",
+        "what is vds metadata",
+        "metadata",
+        "Could you explain VDS metadata?",
+        "Define metadata.",
+        "What exactly is metadata?",
+        "What constitutes VDS metadata?",
+        "Could you elaborate on metadata?"
+      ],
+      "responses": [
+        "VDS Metadata:\n\n\u2022 Survey coordinate metadata:\nThe VDS system does not deal directly with spatial coordinate systems, it only defines an N-dimensional array of voxels. Although the spatial coordinate system is not a property of the VDS object itself, there is some support on the VolumeBox, SeismicLine and Horizon objects for setting up the position from VDSMetadata that follow a specific pattern. In order to position these objects according to the VDSMetadata of the VDS that is connected, the client application must call <code>GetVDSCoordinateSystem()</code> on the VolumeBox/Horizon or <code>GetVDSTraceCoordinates()</code> on the SeismicLine that should be positioned. It's also possible to get an <code>IJKGridDefinition</code> derived from the VDSMetadata from the VDS object by calling <code>GetIJKGridDefinitionFromVDSMetadata()</code>.\n\nThe VDS metadata provides the position of the first voxel (origin) in a 3D world coordinate system. It also provides the step vectors that define in which direction and how far the other voxels are positioned relative to the origin. Each step vector is related to a specific dimension of the VDS and is determined by a naming convention.\n\nThe VDS object annotates each dimension which has a number of samples with a name, a unit, starting and ending coordinate. For example, a seismic dataset with a certain number of samples in the time domain will annotate the trace dimension (typically dimension 0) with 'Time', 'ms', start time, end time.\n\nTwo families of VDS metadata for this category are described at KNOWNMETADATA_SURVEYCOORDINATESYSTEM.\n\n\u2022 Trace coordinate metadata:\nThis category contains VDSMetadataBLOBs that are populated with <code>GetVDSTraceCoordinates()</code> method. More information is provided at KNOWNMETADATA_TRACECOORDINATES."
+      ]
+    },
+    {
+      "tag": "write VDS",
+      "patterns": [
+        "How do I write to a VDS?",
+        "How is it possible to write a VDS file?",
+        "How can I write a VDS?",
+        "Is it possible to write a vds?",
+        "write vds",
+        "writing a vds",
+        "How to write a vds",
+        "I want to write a vds",
+        "How a VDS file can be written",       
+        "What's the process for writing data to a VDS?",
+        "Can you guide me on writing a VDS file?",
+        "What steps should I follow to write to a VDS?",
+        "Can writing to a VDS be done, and if so, how?",
+        "Instructions for writing to a VDS, please.",
+        "I'm looking to write data into a VDS; how can I do this?",
+        "What method is used to write a VDS?",
+        "I'd like to learn how to write a VDS.",
+        "What are the steps for writing a VDS file?"
+      ],
+      "responses": [
+        "This seemingly simple question has a multitude of answers depending on what you really want to do and how performance-critical the work is. Once a VDS object instance has been provided with data, it can be cached to a VDS file on disk.\n\nThe simplest way of writing data to a VDS object instance is to create an instance of <code>Hue::ProxyLib::VDSDirect</code>. Using a <code>Hue::HueSpaceLib::VolumeDataReadWriteAccessor</code> it is possible to write individual voxel values into a VDS, like it is a multi-dimensional array.\n\nYou may wish to write directly to a remote dataset at some URL, rather than writing to a VDS to be cached to disk. In that case, you will use the <code>Hue::ProxyLib::VDSRemote</code>."
+      ]
+    },
+    {
+      "tag": ["delete VDS","remove vds", "deleting vds", "removing vds", "remove a vds", "delete a vds"],
+      "patterns": [
+        "How do I delete to a VDS?",
+        "How is it possible to delete a VDS file?",
+        "How can I delete a VDS?",
+        "Is it possible to delete a vds?",
+        "How do I remove to a VDS?",
+        "How is it possible to remove a VDS file?",
+        "How can I remove a VDS?",
+        "Is it possible to remove a vds?",
+        "what should I do to delete a vds",
+        "How a vds file can be deleted",
+        "deleting VDS",
+        "What about deleting vds?",
+        "how can I delete a vds file?",
+        "What are the steps to delete a VDS?",
+        "Can a VDS file be deleted, and if so, how?",
+        "What method should I use to delete a VDS?",
+        "Can one delete a VDS, and how would that be achieved?",
+        "What is the process for removing a VDS?",
+        "Is deleting a VDS file feasible, and how can it be done?",
+        "What approach should I take to remove a VDS?",
+        "Is the removal of a VDS possible, and how can it be accomplished?",
+        "What actions are required to delete a VDS?",
+        "How can one proceed to delete a VDS file?",
+        "Approaches to deleting a VDS?",
+        "What should be considered when looking to delete a VDS?",
+        "What is the procedure for deleting a VDS file?",
+        "may I know how I can delete a vds data?",
+        "May I know how is it possible to delete a vds data?",
+        "may I know how I can remove a vds data?",
+        "May I know how is it possible to remove a vds data?",
+        "please let me know how I can delete a vds data?",
+        "please let me know is it possible to delete a vds data?",
+        "please let me know I can remove a vds data?",
+        "please let me know it possible to remove a vds data?",
+        "please introduce to me that how I can remove a vds data",
+        "please introduce to me that how I can remove a vds file"
+
+      ],
+      "responses": [
+        "You can delete all of the remote data for a VDS by connecting to the remote VDS using a <code>Hue::ProxyLib::VDSRemote</code> in read/write mode, then calling the DeleteRemoteData method. This method will delete all of the VDS chunk data, the VDS chunk metadata, and the top-level VolumeDataLayout and LayerStatus JSON files. Errors can be monitored using the StatusMessage event.\n\nNote:\nUsing VDSRemote DeleteRemoteData is not recommended for datasets stored in OSDU Seismic DMS, since OSDU provides its own REST API endpoint for deleting a dataset. That REST API takes care of deleting the data itself, as well as the registration information for the dataset."
+      ]
+    },
+
+
+
+
+    {
+      "tag": ["delete Layers","remove layers", "deleting layers", "removing layers", "remove a layer", "delete a layer", "delete layer", "delete layers from IAI", "delete the layer"],
+      "patterns": [
+        "How can I remove a layer?",
+        "How can I remove layers",
+        "How can I delete layer",
+        "How do I delete to a layer?",
+        "deleting layers",
+        "removing alyers",
+        "How is it possible to delete a layer?",
+        "How can I delete a layer?",
+        "Is it possible to delete a layer?",
+        "How do I remove to a layer?",
+        "How is it possible to remove a layer?",
+        "How can I remove a layer?",
+        "Is it possible to remove a layer?",
+        "what should I do to delete a layer",
+        "How a layer can be deleted",
+        "deleting layer",
+        "What about deleting layer?",
+        "how can I delete a layer?",
+        "What are the steps to delete a layer?",
+        "Can a layer file be deleted, and if so, how?",
+        "What method should I use to delete a layer?",
+        "Can one delete a layer, and how would that be achieved?",
+        "What is the process for removing a layer?",
+        "how is it possible for a user to delete layers from my session",
+        "delete layers from IAI",
+        "delete layer in IAI"
+      ],
+      "responses": [
+        "You can delete layers from your session.\n\n1. Select the desired layer, click the Actions menu and select Delete.\n\nNote: Deep learning layers must be deleted before the associated label layer can be deleted. Static Data Layers that are being used by another layer (e.g., an input mask or Vertical Mask Layer) cannot be deleted until they are disassociated.\n\n2. A confirmation dialog will appear.\n3. Click Delete to delete the layer."
+      ]
+    },
+
+    {
+      "tag": ["upload VDS", "upload vds Cloud", "uploading vds", "vds uploading"],
+      "patterns": [
+        "How do I upload a VDS file to cloud object store?",
+        "How is it possible to upload a VDS file to cloud?",
+        "How can I upload a VDS?",
+        "Is it possible to upload a vds to cloud?",
+        "upload a vds",
+        "i want to upload a vds data.",
+        "i want to upload a vds data. Please tell me how to do that?",
+        "What is the process for uploading a VDS file to a cloud object store?",
+        "In what way can a VDS file be uploaded to the cloud?",
+        "What are the methods available for uploading a VDS file?",
+        "Can a VDS file be uploaded to the cloud?",
+        "Please initiate the upload of a VDS file.",
+        "I intend to upload VDS data.",
+        "I'm interested in uploading VDS data. Could you guide me through the process?"
+      ],
+      "responses": [
+        "To upload an existing VDS file on-disk to a cloud-object store one needs to use the VDSUploader or the hue.cloud-Python module.\n\nWarning:\nYou cannot simply upload an existing VDS file on disk to object-store using a generic uploader such as s3copy. You must use the VDSUploader tool to later access the VDS directly from the cloud using HueSpace or OpenVDS."
+      ]
+    },
+    {
+      "tag": ["copy VDS", "copy vds local", "copy a vds", "copying vds", "copying a vds"],
+      "patterns": [
+        "How do I copy a VDS file localy",
+        "How do I duplicate a VDS file localy",
+        "copy vds",
+        "duplicate vds",
+        "How can I copy a VDS file",
+        "How should I make a local copy of a VDS cache file?",
+        "How is it possible to make a local copy a VDS file",
+        "How can I copy a VDS?",
+        "Is it possible to copy a vds?",
+        "How to copy VDS?",
+        "How to duplicate VDS?",
+        "tell me know how to copy a vds file",
+        "copy a vds",
+        "What are the steps to duplicate a VDS file localy?",
+        "What methods exist to copy a VDS file?",
+        "What is the recommended approach for creating a local duplicate of a VDS cache file?",
+        "What's the process for making a local copy of a VDS file?",
+        "How do I go about copying a VDS?",
+        "Can a VDS be duplicated?",
+        "What steps are involved in copying VDS?",
+        "Please explain how to duplicate a VDS file.",
+        "I need to duplicate a VDS file, how can I do that?",
+        "Please let me know how I can copy a vds data?",
+        "Please let me know how I can copy a vds?",
+        "Please let me know how I can copy a vds file?",
+        "May I know how it is possible for a user to copy a vds data"
+
+      ],
+      "responses": [
+        "A VDS cache file may be restored to a VDS object using e.g. <pre><code>Hue::ProxyLib::VDSManager::RestoreAndSealVDSFromFileName</pre></code> or <pre><code>Hue::ProxyLib::VDSManager::RestoreVDSFromURL</pre></code>But what if that VDS cache file is on a network drive with a particularly slow connection? You may find that you want to have a local version of the cache file available for optimized access.\n\nYou cannot simply restore the VDS, unseal it, and set a new cache file name. Doing so would delete or invalidate the existing VDS cache file on the network drive. You will need to produce a new local VDS cache file instead.\n\nThere are a couple of ways to create a local VDS cache file given another VDS cache file.\n\nYou could simply copy the VDS cache file from the network drive to the local drive, outside of HueSpace, then restore the VDS from the new local cache file. This is a synchronous approach that requires you to finish the file copy before restoring the VDS.\n\nAlternatively, you could create a pass-through VDS in HueSpace that takes the original VDS (restored from the VDS cache file on the slow network drive) as input and forwards the input VDS data to its own output, then cache and seal the pass-through VDS to a new local VDS cache file. This may be done asynchronously, where HueSpace populates the cache file in the background while you are also potentially requesting data from the VDS as needed (which then also gets cached).\n\nHueSpace ships with a pass-through VDSFilter plugin. The plugin will copy all channels, or a given selection of channels, from the input VDS. The output will have the same voxel format and components as the input."
+      ]
+    },
+    {
+      "tag": ["prefetching VDS", "cashing VDS", "prefetching VDS to disk", "cashing VDS to disk", "cash vds"],
+      "patterns": [
+        "cashing VDS",
+        "cash vds",
+        "prefetch vds",
+        "pre fetch vds",
+        "cash data",
+        "pre fetch data",
+        "prefetch data",
+        "prefetching vds",
+        "How do I know when VDS prefetching / caching to disk is complete?",
+        "How do I know when VDS prefetching to disk is complete?",
+        "How do I know when VDS caching to disk is complete?",
+        "What indicates the completion of VDS prefetching or caching to disk?",
+        "What signals that VDS prefetching to disk has finished?",
+        "How can I determine if VDS caching to disk has been completed?"
+      ],
+      "responses": [
+        "Prefetching a VDS is synonymous with Caching it to a file on disk. The terms are used interchangeably.\n\nPrior to caching a VDS to disk, you must ensure that the various caching-related sub-objects are set as desired, either that their default values are correct or they have been explicitly set to the correct values. The caching-related sub-objects include CacheFileName, the various CacheDimensions_* flags that determine whether each dimension group should be cached, CompressionMethod and CompressionTolerance if applicable. Changing any of those values after caching has started will invalidate the cache file and cancel the caching process.\n\nOnce the cache file sub-objects are set as desired, caching is generally initiated by setting the VDS PrefetchMode to VDSPrefetchMode::Once. You then know caching is complete when the PrefetchMode changes back to <code>VDSPrefetchMode::Off</code>. If you want to cache the entire file synchronously, you can use <code>Hue::ProxyLib::IProxyInterface::RunUntil</code> with a condition that checks whether the VDS PrefetchMode has been set to <code>VDSPrefetchMode::Off</code>.\n\nWhile a VDS is being cached, it may be useful to handle the CachedOnDiskFactor changed event to output progress or update a progress bar. The VDS CachedOnDiskFactor ranges from 0.0 to 1.0 as the caching process runs. It may also be useful to periodically output the PrefetchStatus, which reports how long caching has taken so far and provides an estimate of the time remaining.\n\nIf an error occurs while caching, the VDS StatusMessage event will be raised with a non-zero error code. It may be useful to record such errors for reporting after the caching process stops. Additionally, VDS has a LastFileError sub-object that specifically records the last disk error that was encountered while reading or writing data to disk. If any error is encountered, caching will be canceled and PrefetchMode set to VDSPrefetchMode::Off.\n\nWarning:\nChecking for VDS CachedOnDiskFactor equal to 1.0 may seem equivalent to checking for PrefetchMode equal to <code>VDSPrefetchMode::Off</code>, but there are subtle differences because of the timing of when HueSpace updates each one. It is also possible that PrefetchMode changes to <code>VDSPrefetchMode::Off</code> because of an error during caching, which would prevent CachedOnDiskFactor from ever reaching 1.0. So checking for VDS PrefetchMode to equal <code>VDSPrefetchMode::Off</code> is a more robust approach."
+      ]
+    },
+    {
+      "tag": ["Storage format", "vds storage format", "storage"],
+      "patterns": [
+        "What is VDS storage format?",
+        "vds storage fomat?",
+        "Tell me more about vds storage format",
+        "Tell me more about vds storage",
+        "let me know about vds storage format",
+        "let me know about vds storage",
+        "format of vds storage",
+        "What is the storage format for VDS?",
+        "What is the format used for storing VDS data?",
+        "I'd like to understand more about the VDS storage format.",
+        "Could you explain the storage format of VDS?",
+        "Could you provide additional details about the storage format used for VDS?",
+        "Could you elaborate on the storage mechanism for VDS?",
+        "Can you provide insights into the storage format utilized by VDS?",
+        "Could you provide information about the storage structure of VDS?",
+        "I'm interested in gaining a deeper understanding of the storage format employed by VDS."
+      ],
+      "responses": [
+        "A VDS dataset is defined by a set of axes, each having a name, unit and number of samples, that determines the dimensionality (up to 6D) of the VDS, and a set of data channels, each having a name, unit and data format, that determine which values are stored for each position in the VDS. A VDS also has a base brick size (see below) and a setting for how many level-of-detail (LOD) downsampled versions of the data there are.\n\nThere is always at least one channel, the primary channel, and it always has the same dimensionality as the number of axes of the VDS. The VDS might also have additional channels, these channels can optionally ignore the first axis of the VDS and instead store a fixed number of values (most commonly a single value). Additional channels can also specify that they do not have LODs as it is not all data types that are meaningful to downsample.\n\nThe data in a VDS is organized into layers, which is the data for a specific channel with a specific LOD and a specific partitioning into chunks. Chunks are 3D bricks or 2D tiles that can be serialized using different compression methods (including no compression) and are stored as individual objects in the cloud, or in a container file. The VDS formats support multiple partitionings of the same data into chunks, e.g. the data can be stored as both 3D bricks and 2D tiles to allow for faster access to slices of the data at the cost of increased storage requirements.\n\nThe format also specifies how metadata, key-value pairs pertaining to the VDS as a whole, is stored. There is a set of known metadata that applications using VDS for a specific purpose (e.g. to store seismic data) are expected to follow, both required metadata and additional optional metadata that can be used to store information that allows re-creating the original data (e.g. SEG-Y file or other proprietary formats) exactly.\n\nThe description of the partitioning of the data and all related metadata is encoded in the JSON format (The JSON Data Interchange Format, 2017), thus it can easily be interpreted using a variety of programming languages and technologies. Each chunk of data is serialized in one of several available binary serialization methods, all of which have open source deserialization code available.\n\nLayers:\nEach multi-dimensional array of data is called a layer, there will be one layer for each partitioning of each LOD of each data channel in the dataset. The partitioning of a layer into 3D bricks or 2D tiles is done with respect to a dimension group which defines which dimensions of the multi-dimensional array are the 3 dimensions of the bricks. For example a 4D array can be partitioned into 3D bricks that are either including the 012 dimensions of the 4D array, or the 013 dimensions or the 023 dimensions or the 123 dimensions.\n\nThe name of a layer is formed by appending channel name + dimension group + LOD, and for the primary channel of the dataset the channel name is omitted from the layer name. An example layer name is Dimensions_012LOD0 for the 012 dimension group of the primary channel at LOD 0. See figure_layers for an illustration of how a seismic poststack dataset is organized.\n\nChunks:\nChunk data formats supported include 32- and 64-bit floating point values, 8- and 16-bit unsigned integers with a scale and offset (which can be used to represent quantized floating-point values), 32- and 64-bit unsigned integers, and 1-bit Boolean values. Null/no-values are fully supported.\n\nChunks can be uncompressed or compressed with a range of compression options, including wavelet compression (lossy or lossless), zipped, or run-length encoding. Constant value chunks are marked as such in the index of the dataset and do not need to be stored explicitly, so sparse volumes are represented in an efficient way.\n\nThe base brick size of a 3D brick is always a power-of-two (64, 128, 256 etc.), and bricks always have the same size in each dimension. 2D tiles have a size that is a multiple (usually 4 times) of the base brick size in order to reduce the overhead of having a lot of separate objects.\n\nChunk metadata:\nTo enable sparse datasets to be efficiently represented, as well as chunk compression methods that can use adaptive/progressive compression (i.e. use a prefix of the serialized chunk data to produce a lower-quality version of the chunk), we can have a small amount of extra binary data (typically 8-40 bytes for each chunk) that are available as a 1D array divided into pages of a fixed number of chunk entries.\n\nThe interpretation of this chunk-metadata is dictated by the serialization method for the layer in question. The 8 first bytes is the volume data hash which is used to detect duplicates. It does not have to be a real hash of the data, the only requirement is that if the volume data hash of two chunks is identical we can assume the data stored for that chunk is the same. Chunk-metadata page entries with a value of 0 indicate a chunk has not been written, and this is not a legal volume data hash. There are special values of the volume data hash to indicate the whole chunk is NoValue (0xFFFFFFFFFFFFFFFF) or constant (first 4 bytes is an IEEE floating point value, next 4 bytes is 0x01010101). For wavelet compressed data a small table is stored in the next 16 bytes where each byte represents how many 255ths of the size of the previous level (starting with the size of the full object) are required in order to decompress that quality level."
+      ]
+    },
+    {
+      "tag": ["NaN in VDS", "NaN VDS", "VDS NaN", "store NaN in VDS"],
+      "patterns": [
+        "How do I store NaNs in a VDS?",
+        "what should I do with NaN is a vds file?",
+        "nan vds",
+        "nan in vds",
+        "How can I save NaNs in VDS?",
+        "How do I store NaN in VDS",
+        "How should I sotore NaN in VDS?",
+        "What is the method for preserving NaNs within a VDS?",
+        "How should NaN values in a VDS file be handled?",
+        "Dealing with NaNs in a VDS.",
+        "Addressing NaN occurrences within a VDS.",
+        "What steps can I take to retain NaNs within a VDS?",
+        "How can I ensure NaN values are stored in a VDS?",
+        "What is the recommended approach for storing NaNs in a VDS?"
+      ],
+      "responses": [
+        "VDSs do not directly allow for storing not-a-number (NaN) values. However, by using the NoValue functionality of a VDS, it is possible to achieve a similar effect, and even get NaNs back when querying the VDS.\n\nDecide upon a (non-NaN) value that will be used to represent your NaN. We call this the novalue-value.\n\nSet the <code>Hue::ProxyLib::VDS::NoValue</code> property on the VDS to the novalue-value, and enable the <code>Hue::ProxyLib::VDS::UseNoValue</code> property.\n\nReplace NaN with the novalue-value when populating the VDS.\n\nWhen requesting data from the VDS, use the replacementNoValue argument to specify that NaNs should be returned when the VDS contains the novalue-value. E.g., <code>Hue::ProxyLib::VolumeDataAccessManager::RequestVolumeSubset</code> takes such an argument."
+      ]
+    },
+    {
+      "tag": ["HueSpace"],
+      "patterns": [
+        "what is huespace?",
+        "huespace",
+        "huspace",
+        "hue space",
+        "Tell me about HueSpace",
+        "what are the capabilities of husepace",
+        "what kind of capabilities huespace have?",
+        "What does HueSpace refer to?",
+        "Describe HueSpace.",
+        "Could you provide information on HueSpace?",
+        "What capabilities does HueSpace offer?",
+        "What are the capabilities of HueSpace?"
+      ],
+      "responses": [
+        "Overview\nHueSpace is a framework and computational engine for performing computation and visualization on extremely large datasets. It can be thought of as a Core Engine that combines:\n\n\u2022 Data\n\u2022 Compute\n\u2022 Visualization\n\nThe design of HueSpace is driven by the demands of the oil and gas industry, but most of the concepts are domain-independent.\n\nHueSpace provides two distinct APIs for developing applications:\n\nThe Proxy API, which is used for integrating into the client application and orchestrating computations\n\nThe Plugin API, which is used to provide new algorithms to import and process volumetric or shape data\n\nA client application may use HueSpace directly, or it may go through the Headwave Platform APIs to use domain-specific objects for oil and gas. An application may use the various algorithms (provided as plug-ins) that ship with HueSpace itself, and it may also provide its own. Most applications will also use a multitude of other libraries, and HueSpace is able to coexist alongside those other libraries.\n\nDesign Principles\nSimplicity\nClient applications should be able to utilize all HueSpace functionality just by using a simple, high-level API. It should be possible to create extensible applications using parallel (possibly multi-GPU), out-of-core processing and state-of-the-art visualization without having to deal with low-level details.\n\nPull-based Dataflow Pipeline\nAll HueSpace computations are lazy; an object performs its computation only if another object requests the result. In other words, the object's inputs and parameters can be fully configured, but if there is no object that uses the output of the computation, no work at all is performed. This default behavior gives HueSpace a 'pull' model for data production, which drives data through processing pipelines on demand; that is, only as it is needed for computation, visualization, or direct client access.\n\nRetained Mode State Machine\nHueSpace contains a complete model of the objects to be computed and rendered. Client calls do not directly trigger computations or rendering, but rather modify state in the internal object model. HueSpace can thus optimize when the actual computations or visualization takes place.\n\nPrimary and Transient State\nThe complexity of the state-of-the-art algorithms implemented in HueSpace is hidden from client application developers. Primary state, designed to be manipulated, is exposed, while transient state is hidden away inside HueSpace.\n\nTechnology Architecture\nHueSpace is exclusively written in cross platform C++, with minimal third-party dependencies. The Core Engine is multi-threaded, and it utilizes OpenMP and optionally NVIDIA CUDA for accelerating computations. The visualization system is built on OpenGL. For specific system requirements see System Requirements.\n\nProxy API\nWhen integrating HueSpace into end-user applications, all access to the internal Object Model goes through the Proxy API. This API is currently provided for:\n\n\u2022 C++\n\u2022.NET (usually used through C#)\n\u2022 Python\n\u2022 Java\n\nFor each of these languages, the API and documentation are automatically generated from the internal Object Model. This ensures that the APIs are always updated and kept in sync. The generated APIs aspire to be conservative in their version requirements for each target language, so that HueSpace can be integrated into existing applications without mandating other changes to technology stacks that are already deployed.\n\nEach Proxy API is designed to feel native for its target language. In languages such as .NET and Python, sub-objects are exposed using properties instead of more explicit get/set function calls, and native event mechanisms are used. Collection interfaces are implemented in the .NET and Java APIs, while iterators are supported in the C++ API to allow use with the STL. Bulk data is provided as NumPy arrays in the Python API.\n\nNote that all of the Proxy APIs may be used concurrently to access the same object model. So you could have a .NET front-end with a C++ back-end that also exposes Python scripting capability, or any other combination that makes sense for the technical problem at hand.\n\nPlugin API\nCompute plugins written in C++ (optionally using CUDA) may be used to extend the HueSpace Core Engine with new data sources and algorithms. This plugin API is very different from the object model proxy API, and different rules apply to them, see the Compute Plugin Developer Guide for more details.\n\nUser Interface\nViewer UI libraries are provided for C++ (Qt) and .NET (WinForms, WPF). These libraries provide widgets that create and maintain the OpenGL context that will be provided to HueSpace for rendering, as well as implement basic handling for mouse, keyboard, etc.\n\nDeployment\nHueSpace is delivered as a collection of components which include:\n\n\u2022 The core native C++ library, whose architecture is described in Architecture and Technology Details\n\u2022 Proxy API libraries in various languages, which provide customized language-specific access to the functionality provided by the core library\n\u2022 Viewer UI libraries for C++ (Qt) and .NET (WinForms, WPF)\n\u2022 A collection of plug-ins for processing volumetric data and shapes\n\nThere are several ways in which HueSpace can be used within a host application:\n\n\u2022 Direct OpenGL can be used by providing HueSpace with an existing OpenGL context maintained by e.g. WinForms or Qt.\n\u2022 Integration with other frameworks such as OpenInventor, where support is provided by means of the OpenInventor node, allowing for HueSpace rendering to be embedded within any OpenInventor scene graph.\n\u2022 Headless/Text-Only It is possible to use HueSpace in a completely non-interactive fashion, e.g. for batch processing or import jobs. CUDA can optionally be used if a GPU is present, but access to a GPU is not a requirement. The VDSPrefetch Tool described elsewhere is an example of such an application."
+      ]
+    },
+    {
+      "tag": ["CUDA", "cuda memory", "GPU"],
+      "patterns": [
+        "What should I do if my plugin uses another library that allocates CUDA memory?",
+        "please tell me more about cuda memory",
+        "How should I allocate cuda memory?",
+        "cuda memory",
+        "CUDA memory?",
+        "Huespace cuda memory",
+        "CUDA, plugin, memory, library",
+        "cuda memory allocation",
+        "What should I do if my plugin uses another library that allocates gpu memory?",
+        "please tell me more about GPU memory",
+        "How should I allocate cuda memory?",
+        "gpu memory",
+        "GPU memory?",
+        "Huespace cuda memory",
+        "GPU, plugin, memory, library",
+        "GPU memory allocation",
+        "What should I do with CUDA",
+        "What should I do with GPU",
+        "CUDA",
+        "GPU",
+        "How can I work with cuda?",
+        "How can I work with GPU"
+      ],
+      "responses": [
+        "HueSpace provides a caching system for VDS processing carried out on the GPU. To summarize, each physical GPU on the system that is enabled for use with HueSpace will be associated with a particular VDS processing thread. The ConfigMemoryManagement sub-objects ProcessingGPUCacheMax[0-7] define how much GPU memory HueSpace is allowed to use for the processing GPU cache (in megabytes) for each processing thread with a GPU enabled. If the processing GPU cache for a processing thread reaches its ProcessingGPUCacheMax[0-7], HueSpace will attempt to free space in that processing GPU cache by removing the least recently used cache items.\n\nThe HueSpace GPU processing caching system tries to ensure that there is no sustained memory usage above the configured max for a GPU, and this works when HueSpace is aware of all of the GPU memory allocated for VDS data production. However, for plugin-based VDS objects, it is possible that plugin processing functions make use of external libraries that allocate their own GPU CUDA memory. In such cases, it is useful to make HueSpace aware of this externally allocated CUDA memory so that it may be taken into account for the overall CUDA memory required for the plugin. This may be done in plugin BeginProcessing using the provided ResourceAllocationInterface instance's AddExternalCUDAMemoryPressure.\n\nExternal CUDA memory pressure recorded through AddExternalCUDAMemoryPressure will count against the ProcessingGPUCacheMax[0-7] for the GPU processing thread that the plugin instance is running on, which means that it is treated in an equivalent manner as HueSpace allocated GPU CUDA memory when it comes to deciding whether to remove the least recently used cache items to ensure memory usage stays below the configured max.\n\nYou generally do not need to do anything else, as external CUDA memory pressure is automatically removed by HueSpace after the call to plugin EndProcessing"
+      ]
+    },
+    {
+      "tag": ["Channel type", "seismic channel type", "Data type", "vds data type", "dimensions", "channels", "dimensions", "channel in vds", "channel in VDS", "VDS Channel"],
+      "patterns": [
+        "What is vds data type?",
+        "What is vds channel type?",
+        "What is channel type in vds",
+        "Tell me about data type in vds",
+        "channel in vds",
+        "vds channel",
+        "vds data type",
+        "dimension of vds",
+        "vds dimension",
+        "let me knwo number of channels in a vds file",
+        "could you please let me know about channel type or data type in vds?",
+        "may I know how many channels are possible for a vds data?",
+        "what is the normal number of channels is vds",
+        "what is number of channels in vds",
+        "what is the normal number of dimensions in vds",
+        "what is number of dimension in vds",
+        "please tell me more about dimensions of a vds data",
+        "tell me about channels",
+        "what is channel in vds?"
+      ],
+      "responses": [
+        "A VDS dataset is defined by a set of axes, each having a name, unit, and number of samples, that determines the dimensionality (up to 6D) of the VDS, and a set of data channels, each having a name, unit and data format, that determine which values are stored for each position in the VDS.        \n\nThere is always at least one channel, the primary channel, and it always has the same dimensionality as the number of axes of the VDS. The VDS might also have additional channels, these channels can optionally ignore the first axis of the VDS and instead store a fixed number of values (most commonly a single value). E.g., if the primary channel is 4D, an additional channel must be 4D or 3D.\n\nThe data type of the samples might differ between channels. Supported sample formats are 32- or 64-bit floating point values, 8-, 16-, 32- or 64-bit integer values, and 2- or 4-component vectors of these formats.\n\nEach channel may be named and have a specified unit of measure. In addition, it is possible to specify a special value which indicates the absence of a data value; this is called novalue.\n\nMore information about channels or data type can be found here: <a href=\"https://osdu.pages.opengroup.org/platform/domain-data-mgmt-services/seismic/open-vds/vds/deepdive/deepdive.html#channels-and-data-type\">Click here</a>"
+      ]
+    },
+    {
+      "tag": ["Interactive AI", "IAI", "InteractiveAI"],
+      "patterns": [
+        "What is interactive AI?",
+        "What is interactiveAI?",
+        "What is IAI",
+        "Tell me about interactiveAI",
+        "Tell me about AIA",
+        "Tell me about interactive AI?",
+        "Please tell me more about interactiveAI",
+        "Please tell me more about AIA",
+        "Please tell me more about interactive AI",
+        "Introduce InteractiveAI",
+        "Let me know what interactiveAI is",
+        "explaine IAI",
+        "aia",
+        "Interactive ai",
+        "interactiveai",
+        "How can I work with IAI"
+      ],
+      "responses": [
+        "InteractivAI (IAI) creates deep learning training networks using your unique interpretations and seismic data set. The tool establishes a live feedback loop, allowing you to label any visible geological feature and generates predictions in 3D for the entire survey every 30 seconds. Minimal labeling (~<1% in most cases) will generate full geologically-feasible results throughout the 3D survey area.\n\nQuickly analyze vast amounts of seismic data at all scales, accelerating the interpretation process, and shift your focus to critical evaluation to maximize prospect generation. Make faster business decisions involving data rooms, bid round preparation, or other time-sensitive interpretation activities.\n\nMore information about InteractiveAI can be found here: <a href=\"https://bluware.com/data-solutions/interactivai/\">Click here</a>"
+      ]
+    },
+    {
+      "tag": ["stop Interactive AI", "stop IAI", "stop InteractiveAI", "exit Interactive AI", "exit IAI", "exit InteractiveAI",
+              "stopping Interactive AI", "stopping IAI", "stopping InteractiveAI", "exiting Interactive AI", "exiting IAI", "exiting InteractiveAI"],
+      "patterns": [
+        "stop interactive AI?",
+        "exit interactive AI?",
+        "stop IAI",
+        "Tell me about how to stop interactiveAI",
+        "Tell me about exiting AIA",
+        "Tell me about exiting Interactive AI",
+        "Stopping IAI",
+        "Exiting interactive AI",
+        "Tell me about interactive AI?",
+        "Please tell me more about stopping interactiveAI",
+        "EXIT AIA",
+        "Exit iai",
+        "exit iai"
+      ],
+      "responses": [
+        "To exit InteractivAI, select Logout from the top left menu.\n\nYou will be logged out from the application.\n\nOn desktop installation, you can close the application command window."
+      ]
+    },
+    {
+      "tag": ["license error", "license errors", "IAI  license errors", "InteractiveAI license errors", "Interactive AI  license errors"],
+      "patterns": [
+        "interactive AI license errors?",
+        "what should I do with license errors in IAI",
+        "license error IAI",
+        "Tell me about how to handele license errors in interactiveAI",
+        "Tell me about license errors AIA",
+        "Tell me about  license errors in Interactive AI",
+        "license errors IAI",
+        "license errors interactive AI",
+        "Tell me about  license errors AI?",
+        "I am getting license errors when starting InteractivAI",
+        "I am getting license errors when starting IAI"
+      ],
+      "responses": [
+        "If you are using a single machine set for InteractivAI, when you install InteractivAI confirm that the license file or the license server was specified. You can open the shortcut (Windows) or the startup command (Linux) to verify the license information.\n\n\u2022 Confirm that the .lic file provided by Bluware contains the machine's mac address in the file.\n\u2022 Confirm that the license file directory specified in the --license argument is where the .lic file is placed."
+      ]
+    },
+    {
+      "tag": ["VDSURL ", "VDS URL"],
+      "patterns": [
+        "What is VDSURL?",
+        "What VDSURL is",
+        "please let me know what is VDSURL?",
+        "introduce VDSURL",
+        "introduce VDSURL for me",
+        "explain VDSURL for me",
+        "please tell me more about VDSURL",
+        "What is VDS URL?",
+        "What VDS URL is",
+        "please let me know what is VDS URL?",
+        "introduce VDS URL",
+        "introduce VDSURL for me"
+      ],
+      "responses": [
+        "A VDSURL is a link to a remote VDS that reside in a cloud bucket or blob storage such as Azure, AWS, Google Data Services, or other cloud service. the VDSURL can be used in other Bluware products such as FAS or Headwave to access the remote VDS. The remote VDS cannot be downloaded by conventional tools like such as a web browser. Special tools can open it through the url or download it as a file."
+      ]
+    },
+    {
+      "tag": ["BDS", "Bulk Data Store"],
+      "patterns": [
+        "What is BDS?",
+        "What BDS is",
+        "please let me know what is BDS?",
+        "introduce BDS",
+        "introduce BDS for me",
+        "explain BDS for me",
+        "please tell me more about BDS",
+        "What is Bulk Data Store?",
+        "What Bulk Data Store is",
+        "please let me know what is Bulk Data Store?",
+        "introduce Bulk Data Store",
+        "introduce Bulk Data Store for me",
+        "explain Bulk Data Store for me",
+        "please tell me more about Bulk Data Store",
+        "BDS",
+        "Bulk Data Store"
+
+      ],
+      "responses": [
+        "Bulk Data Store\nThe Bulk Data Store (BDS) is the internal container format used by HueSpace when serializing VDSs, shapes and properties to disk."
+      ]
+    },
+    {
+      "tag": ["BrickSize2DMultiplier"],
+      "patterns": [
+        "What is BrickSize2DMultiplier?",
+        "What BrickSize2DMultiplier is",
+        "please let me know what is BrickSize2DMultiplier?",
+        "introduce BrickSize2DMultiplier",
+        "introduce BrickSize2DMultiplier for me",
+        "explain BrickSize2DMultiplier for me",
+        "please tell me more about BrickSize2DMultiplier",
+        "Can you explain what BrickSize2DMultiplier is?",
+        "Could you define BrickSize2DMultiplier?",
+        "Could you provide information on what BrickSize2DMultiplier is?",
+        "Could you give an overview of BrickSize2DMultiplier?",
+        "Would you mind introducing BrickSize2DMultiplier?",
+        "I'd appreciate an explanation of BrickSize2DMultiplier.",
+        "Can you offer more details about BrickSize2DMultiplier?"
+      ],
+      "responses": [
+        "In a VDS, the BrickSize2DMultiplie configures how many 3D bricks are overlapping a 2D tile (if you can access a 2D dimension group), normally (more or less all the time, the exception being some 2D horizons) this is 4 so each 2D tile overlaps 4x4 bricks."
+      ]
+    },
+    {
+      "tag": ["Prefetching", "pre fetching", "pre-fetching"],
+      "patterns": [
+        "What is Prefetching?",
+        "What Prefetching is",
+        "please let me know what is Prefetching?",
+        "introduce Prefetching",
+        "introduce Prefetching for me",
+        "explain Prefetching for me",
+        "please tell me more about Prefetching",
+        "What does Prefetching entail?",
+        "Define Prefetching.",
+        "Could you please explain Prefetching?",
+        "Provide an introduction to Prefetching.",
+        "Could you introduce Prefetching to me?",
+        "Can you explain what Prefetching is?",
+        "I would like to learn more about Prefetching."
+      ],
+      "responses": [
+        "The terms prefetching and caching are used interchangeably. They both refer to the act of storing VDS data in a VDS cache file. A VDS cache file can be restored to a VDS object inside HueSpace using several methods, including <code>Hue::ProxyLib::VDSManager::RestoreAndSealVDSFromFileName</code> and <code>Hue::ProxyLib::VDSManager::RestoreVDSFromURL</code>."
+      ]
+    },
+    {
+      "tag": ["P2P Workflow", "Probability-2-Probability Workflow"],
+      "patterns": [
+        "What is P2P Workflow?",
+        "What P2P Workflow is",
+        "please let me know what is P2P Workflow?",
+        "introduce P2P Workflow",
+        "introduce P2P Workflow for me",
+        "explain P2P Workflow for me",
+        "please tell me more about PrefetcP2P Workflowhing",
+        "What does P2P Workflow entail?",
+        "Define P2P Workflow.",
+        "Could you please explain P2P Workflow?",
+        "Provide an introduction to P2P Workflow.",
+        "Could you introduce P2P Workflow to me?",
+        "Can you explain what P2P Workflow is?",
+        "I would like to learn more about P2P Workflow."
+      ],
+      "responses": [
+        "P2P Workflow:\nThe Probability-2-Probability (P2P) workflow (patent pending) is a manual post-processing step that improves the quality of probabilities and by extension objects extracted from them. This processing step improves the smoothness and continuity of faults and other features. Use the P2P method to:\n\n\u2022 Improve fault continuity after generating a final fault probability cube\n\u2022 Improve smoothness of geobodies after generating a final probability cube\n\u2022 Prepare network results for presentation\n\nThe method should not be used to:\n\n\u2022 Force seismic features to extend where their presence is not confirmed by seismic amplitude data or network predictions.\n\u2022 Significantly change or modify original network probability results.\nWhen you use this method, you should:\n1. Label the P2P layer on an orientation orthogonal to the label/inference direction (for example, label a slice if the original network was trained on the IL and/or XL direction).\n2. Realize the P2P and Fault Sticks in the same direction the P2P labels are painted in.\n\n<img>static/images/p2p1.png</img>\n\nBinary P2P Workflow:\nThe basic workflow is:\n\n1. Label the seismic on inlines and crosslines.\n2. Train and generate network for the inline and crossline labels.\n3. Realize the first probability cube from the trained network.\n4. Create a P2P Binary layer that uses the first probability cube as an input source.\n5. Label the P2P on the z-slice on a new P2P binary network.\n6. Train and generate the network on the P2P binary network for 3 to 5 epochs.\n7. Realize the probability cube from the P2P network and fault segments in the same direction the P2P labels are painted in.\n\nMultiClass P2P Workflow:\nMulticlass layers can also benefit from the P2P method, although the approach is slightly different. Due to the nature of most multiclass cubes the z-slice direction is not ideal for P2P labeling, so a multiclass P2P is labeled in the inline and/or crossline directions (ideally both).\n\n1. Label, train and realize the initial probability from a Multiclass cube.\n2. When the realize process completes, create a new deep learning layer using the initial multiclass probability cube as the input source. Be certain to define the same number of classes in the P2P layer as exists in the Multiclass layer.\nNote: You can paint labels on the amplitude data then assign them to the P2P layer. Sometimes this is easier than trying to label the multiclass cube directly.\n3. Paint the P2P labels on one inline and one crossline.\n4. Train for ~3-5 epochs.\n5. Realize the probability cube from the P2P network on same direction as the label direction."
+      ]
+    },
+    {
+      "tag": ["IAI Network", "InteractiveIAI networks", "Interactive AI network", "IAI Loss functions", "IAI Loss functions", "Networks IAI", "Network IAI"],
+      "patterns": [
+        "What Neworks are used in IAI?",
+        "What are the loss function in IAI",
+        "Which neural network or loss function is better in IAI",
+        "What are the two Deep Learning networks mentioned, and how do they differ in terms of training sample size and risk of over-fitting?",
+        "Describe the five loss functions available for training models. How do they differ in their applications and effects on model training?",
+        "What is the significance of the Weighted RMSE (WRMSE) being available only for binary layers, and how does it impact the predictions?",
+        "Explain how the Categorical Cross-Entropy (CCE) loss function is used and for which type of layers it is exclusively available.",
+        "How does the Dice loss function enhance the similarity areas between prediction results and labels?",
+        "Discuss the Focal loss function and its approach towards hard and easy examples in training.",
+        "What are the advantages and disadvantages of using a mix of Focal and Dice loss functions for training models?",
+        "Why is the ENet and Weighted RMSE combination recommended for binary faults, and what results can be expected?",
+        "For binary geobodies, such as salt, why might the combination of ENet and a mix of Focal and Dice yield better results?",
+        "In the context of multiclass layers, under what conditions is the combination of ENet and a mix of Focal and Dice considered optimal, and why?"
+        
+      ],
+      "responses": [
+        "Two Deep Learning networks (UNet and ENet) and five loss functions (Weighted RMSE, Categorical Cross-Entropy, Dice, Focal, and mix of Dice and Focal) are available. You can experiment with combinations of the networks and the loss functions to train your models as they generally are all able to generate high quality results for most datasets.\n\nThe following network architectures can be used for training or validation:\n\n\u2022 U-Net - the same network architecture used previously in version 3.4 that uses a small sample of patches during training. It has more parameters than ENet and, therefore, is prone to over-fitting when trained for a long time.\n\u2022 E-Net -a new network architecture that uses a larger sample of patches during training. E-Nets can take -(~50%) longer to train per epoch, but typically produce higher quality results than U-Net.\n\nThe following types of loss functions are available for training:\n\nNote: Weighted Root Mean Square Error (WRMSE) and Categorical Cross Entropy (CCE) are only available for binary and multiclass layers, respectively.\n\n\u2022 WRMSE - binary only. The same loss function used in all v3.4 layers. WRMSE tends to make aggressive predictions and generate ample false positives, particularly in early epochs. If you look for more predictions than what you labeled, WRMSE is certainly the one to choose. On the flip side, the inference results may not look very clean due to the false positives. WRMSE is a good starting point for detection of all geological features when you first work on your data and have not many labels.\n\u2022 CCE - multiclass only.\n\u2022 Dice - works by maximizing the similarity areas between prediction results and labels.\n\u2022 Focal - is an extension of the cross-entropy loss function that would focus training on hard negatives examples and down-weight easy examples.\n\u2022 Mix of Focal and Dice - tends to make conservative predictions and is prone to false negatives. For example, it may make several fault segments rather than a long, continuous fault. On the other hand, because of the conservative nature, it is a good choice for training geobodies in poor, low S/N data without making too many unwanted false positive predictions. This is a good starting point for multiclass layers focused on stratigraphy.\n\nGeneral Recommendations\n\u2022 For binary faults, the combination of ENet and Weighted RMSE may yield better results than others.\n\u2022 For binary geobodies (e.g., salt), the combination of ENet and mix of Focal and Dice may yield better results than others.\n\u2022 For multiclass layers of only stratigraphy, the combination of ENet and mix of Focal and Dice may yield better results than others.\n\u2022 For multiclass layers of mix of stratigraphy and faults or other significantly less represented features, the combination of ENet and mix of Focal and Dice may yield better results than others."
+      ]
+    },
+    {
+      "tag": ["Channel"],
+      "patterns": [
+        "What is Channel?",
+        "What Channel is",
+        "please let me know what is Channel?",
+        "introduce Channel",
+        "introduce Channel for me",
+        "explain Channel for me",
+        "please tell me more about Channel",
+        "What defines a Channel?",
+        "Define Channel.",
+        "Could you please explain what a Channel is?",
+        "Provide an introduction to Channels.",
+        "Could you introduce Channels to me?",
+        "Can you explain what a Channel is?",
+        "I would like to learn more about Channels."
+      ],
+      "responses": [
+        "A named collection of layers representing the original data and all LOD-layers derived from it. A dataset can contain multiple channels, e.g. seismic amplitudes and trace dimensions."
+      ]
+    },
+    {
+      "tag": ["Chunk"],
+      "patterns": [
+        "What Chunk is",
+        "what is chunck?",
+        "please let me know what is Chunk?",
+        "introduce Chunk",
+        "introduce Chunk for me",
+        "explain Chunk for me",
+        "please tell me more about Chunk",
+        "What constitutes a Chunk?",
+        "Define Chunk.",
+        "Could you please explain what a Chunk is?",
+        "Provide an introduction to Chunks.",
+        "Could you introduce Chunks to me?",
+        "Can you explain what a Chunk is?",
+        "I would like to learn more about Chunks."
+      ],
+      "responses": [
+        "A piece of a multi-dimensional array of data in a VDS."
+      ]
+    },
+    {
+      "tag": ["Compression Tolerance", "Compression-Tolerance"],
+      "patterns": [
+        "What is Compression Tolerance?",
+        "Compression Tolerance",
+        "What Compression Tolerance is",
+        "please let me know what is Compression Tolerance?",
+        "introduce Compression Tolerance",
+        "introduce Compression Tolerance for me",
+        "explain Compression Tolerance for me",
+        "please tell me more about Compression Tolerance",
+        "What does Compression Tolerance entail?",
+        "Define Compression Tolerance.",
+        "Could you please explain Compression Tolerance?",
+        "Provide insight into Compression Tolerance, please.",
+        "Introduce me to Compression Tolerance.",
+        "Could you explain Compression Tolerance to me?",
+        "I would like to learn more about Compression Tolerance."
+      ],
+      "responses": [
+        "The compression tolerance of a VDS is how many bits of accuracy is used to represent the value range in wavelet space - 1.0 means 8 bits of precision and every doubling of the tolerance removes one bit of precision, every halving of the tolerance adds one bit of precision. The tolerance only applies to wavelet compression methods (even to the lossless method, since the lossless method is implemented by storing a delta between the lossy image and the original). There is a minimum value of 0.01; setting the tolerance to a value below that will make it 0.01."
+      ]
+    },
+    {
+      "tag": ["Inline Stick Spacing", "Crossline Stick Spacing", "Minimum Sticks", "Minimum Stick", "Min Sticks", "Min Stick", "Inline Stick Start / Crossline Stick Start", "Crossline Stick Start", "Inline Stick Start"],
+      "patterns": [
+        "How can I work with Inline Stick Spacing",
+        "How can I work with Crossline Stick Spacing",
+        "What is Inline Stick Spacing?",
+        "Inline Stick Spacing",
+        "What Inline Stick Spacing is",
+        "please let me know what is Inline Stick Spacing?",
+        "introduce Inline Stick Spacing",
+        "introduce Inline Stick Spacing for me",
+        "explain Inline Stick Spacing for me",
+        "please tell me more about Inline Stick Spacing",
+        "What does Inline Stick Spacing entail?",
+        "Define Inline Stick Spacing.",
+        "Could you please explain Inline Stick Spacing?",
+        "Provide insight into Inline Stick Spacing, please.",
+        "Introduce me to Inline Stick Spacing.",
+        "Could you explain Inline Stick Spacing to me?",
+        "I would like to learn more about Inline Stick Spacing.",
+        "What is Crossline Stick Spacing?",
+        "Crossline Stick Spacing",
+        "What Crossline Stick Spacing is",
+        "please let me know what is Compression?",
+        "introduce Crossline Stick Spacing",
+        "introduce Crossline Stick Spacing for me",
+        "explain Crossline Stick Spacing for me",
+        "please tell me more about Crossline Stick Spacing",
+        "What does Crossline Stick Spacing entail?",
+        "Define Crossline Stick Spacing.",
+        "Could you please explain Crossline Stick Spacing?",
+        "Provide insight into Crossline Stick Spacing, please.",
+        "Introduce me to Crossline Stick Spacing.",
+        "Could you explain Crossline Stick Spacing to me?",
+        "I would like to learn more about Crossline Stick Spacing.",
+        "What is Minimum Sticks?",
+        "Minimum Sticks",
+        "What Minimum Sticks is",
+        "please let me know what is Minimum Sticks?",
+        "introduce Minimum Sticks",
+        "introduce Minimum Sticks for me",
+        "explain Minimum Sticks for me",
+        "please tell me more about Minimum Sticks",
+        "What does Minimum Sticks entail?",
+        "Define Minimum Sticks.",
+        "Could you please explain Minimum Sticks?",
+        "Provide insight into Minimum Sticks, please.",
+        "Introduce me to Minimum Sticks.",
+        "Could you explain Minimum Sticks to me?",
+        "I would like to learn more about Minimum Sticks.",
+        "What is Inline Stick Start / Crossline Stick Start?",
+        "What is Crossline Stick Start?",
+        "What is Inline Stick Start?",
+        "What are the conditions required for fault sticks to be generated in the context of Inline Stick Start and Crossline Stick Start?",
+        "Can you explain how the fault stick generation process is influenced by the parameters Inline Stick Spacing, Inline Stick Start, and the range of inline numbers in the seismic dataset?",
+        "How would you calculate the number of fault sticks generated given specific values for Inline Stick Spacing, Inline Stick Start, and the range of inline numbers?",
+        "What is the significance of the term 'N is an integer' in the definition provided for Inline Stick Start / Crossline Stick Start?",
+        "Could you provide an example scenario illustrating the application of Inline Stick Start and Crossline Stick Start in generating fault sticks within a seismic dataset?",
+        "In what situations might one prefer to use Inline Stick Start over Crossline Stick Start, and vice versa?",
+        "How would adjustments to the parameters Inline Stick Spacing and Inline Stick Start impact the distribution and density of fault sticks generated within a seismic dataset?",
+        "What potential challenges or limitations might arise when implementing Inline Stick Start and Crossline Stick Start in fault stick generation processes?",
+        "How does the concept of fault stick generation align with the broader objectives or goals of seismic data analysis or interpretation?",
+        "Can you describe any alternative methods or approaches for fault stick generation that differ from the Inline Stick Start / Crossline Stick Start approach outlined here?"
+      ],
+      "responses": [
+        "'Inline Stick Spacing', 'Crossline Stick Spacing', 'Minimum Sticks' are often considered and changed together. Increasing the values of these parameters tends to remove small faults spanning fewer inlines or crosslines. Those small faults are often false positives or insignificant ones. A fault spanning a number of inlines or crosslines that are less than the multiplication of the Inline Stick Spacing or the Crossline Stick Spacing and the Minimum Sticks will not be generated in the output. For example, when setting Minimum Sticks = 10, Inline Stick Spacing = 5, and Crossline Stick Spacing = 5, it will remove faults that span less than 50 inlines/crosslines.\n\n\nThe fault sticks will only be generated on the inline/crossline numbers = Inline Stick Spacing * N + Inline/Crossline Stick Start, in which N is an integer. For example, when Inline Stick Spacing = 3, Inline Stick Start = 4, and the inline numbers in the seismic dataset are from 3000 to 4000. The fault sticks will be generated on the inline numbers 3004, 3007, 3010, ...., 3997, and 4000."
+      ]
+    },
+    {
+      "tag": ["Gaussian Half-Width", "Gaussian Half Width"],
+      "patterns": [
+        "What is Gaussian Half-Width?",
+        "Gaussian Half-Width",
+        "Gaussian Half Width",
+        "What Gaussian Half-Width is",
+        "please let me know what is Gaussian Half-Width ?",
+        "introduce Gaussian Half-Width ",
+        "introduce Gaussian Half-Width  for me",
+        "explain Gaussian Half-Width  for me",
+        "please tell me more about Gaussian Half-Width ",
+        "What does Gaussian Half-Width  entail?",
+        "Define Gaussian Half-Width.",
+        "Could you please explain Gaussian Half-Width?",
+        "Provide insight into Gaussian Half-Width, please.",
+        "Introduce me to Gaussian Half-Width.",
+        "Could you explain Gaussian Half-Width to me?",
+        "I would like to learn more about Gaussian Half-Width ."
+      ],
+      "responses": [
+        "The Gaussian Half-Width is an integer from 0 to 3. The higher the value is, the lower the overall probabilities in the probability scanner cube are, the greater the gradient is from the fault center to the edges. Due to the smoothing effect applied to the probability scanner cube, the highest probabilities are less than 1 in the probability scanner cube, whereas the highest is equal to 1 in the original probability cube.\n\nWhen faults have large widths on the intersection between the faults and horizontal slices, the intersection tends to have multiple highest probability values around the center of the faults and the algorithms tend to struggle to make smooth centerlines connecting those highest probability voxels. This often results in less optimal fault sticks, such as highly segmented small fault sticks for a supposedly large fault. To improve this, increase the Gaussian Half-Width as shown in the example.\n\nIncreasing the Gaussian Half-Width will lower the overall probabilities in the probability scanner cube. Therefore, adjust the Minimum Probability Start/End along with the changes of the Gaussian Half-Width.\n\nWhen to increase the Gaussian Half-Width value?\n\u2022 Labelling faults with thick widths (e.g., fault picker size > 4)\n\u2022 Faults are gently dipping (because of large intersection widths on the horizontal slices)\n\u2022 Oblique faults to both inline and crossline directions (yielding larger intersection widths on both inline and crossline directions)\n\u2022 Segmented fault surfaces and small fault sticks are generated for supposedly large faults\n\nWhen to decrease the Gaussian Half-Width value?\n\u2022 Labelling faults with thin widths (e.g., fault picker size <= 3)\n\u2022 Some faults are not generated despite they can be clearly seen in the probability cube (lowering the Minimum Probability Start/End may also work)"
+      ]
+    },
+    {
+      "tag": ["XY Scale Factor", "Z Scale Factor", "Z Scale", "XY Scale", "XY Scale Factor / Z Scale Factor", "XYZ Scale"],
+      "patterns": [
+        "What is XY Scale Factor / Z Scale Factor?",
+        "XY Scale Factor / Z Scale Factor",
+        "XY Scale Factor / Z Scale Factor",
+        "XY Scale Factor",
+        "Z Scale Factor",
+        "What Z Scale Factor is",
+        "please let me know what is Gaussian Half-Width?",
+        "introduce XY Scale Factor / Z Scale Factor",
+        "introduce XY Scale Factor / Z Scale Factor for me",
+        "explain XY Scale Factor / Z Scale Factor for me",
+        "please tell me more about XY Scale Factor / Z Scale Factor ",
+        "What does XY Scale Factor / Z Scale Factor entail?",
+        "Define Gaussian XY Scale Factor / Z Scale Factor.",
+        "Could you please explain XY Scale Factor / Z Scale Factor?",
+        "Provide insight into XY Scale Factor / Z Scale Factor, please.",
+        "Introduce me XY Scale Factor / Z Scale Factor.",
+        "Could you explain XY Scale Factor / Z Scale Factor to me?",
+        "I would like to learn more about XY Scale Factor / Z Scale Factor."
+      ],
+      "responses": [
+        "These scale factors can be used to output different units, e.g., feet, by setting both parameters to 3.28084, as the default output is in meters. If positive depth values are wanted, setting Z Scale Factor equals to -1."
+      ]
+    },
+    {
+      "tag": ["Unstability-Allowance", "Unstability Allowance", "Allow Unstability"],
+      "patterns": [
+        "what is Unstability-Allowance?",
+        "what is Unstability Allowance",
+        "What does the azimuth Unstability-Allowance measure in fault stick generation?",
+        "How does the Unstability-Allowance parameter affect the direction of the next fault stick?",
+        "Can you explain the significance of setting the Unstability-Allowance parameter to 0 or higher values?",
+        "What are the consequences of setting the Unstability-Allowance parameter to 0?",
+        "How does increasing the Unstability-Allowance parameter impact the connectivity and curvature of fault sticks?",
+        "What role does the Unstability-Allowance parameter play in grouping fault sticks into the same fault?",
+        "How does downsampling seismic data affect fault stick generation, particularly regarding the Unstability-Allowance parameter?",
+        "What adjustments are necessary for the Azimuth/Dip/Correlation Distance parameters when downsampling seismic data and increasing the Unstability-Allowance?",
+        "What challenges might arise when adjusting the Unstability-Allowance parameter for downsampling seismic data?",
+        "Can you provide a practical example illustrating the effect of varying the Unstability-Allowance parameter on fault stick generation?"
+      ],
+      "responses": [
+        "The azimuth Unstability-Allowance uses the previous fault sticks to determine the azimuthal heading of the next fault stick in the trend.  The measurement is the percentage that the Unstability-Allowance should use from direction of the previous fault sticks to determine the optimal direction of the next fault stick. A value of 0.2 means that the parameter will keep 80% of the previous direction, allowing the fault stick to turn by only 20% relative to the previous fault sticks.\n\nSetting this parameter to 0 will result in many straight faults with few connections. A higher setting (for example, 0.6) will result in many connected faults that curve, however many faults probably should not be connected.\n\nThis parameter has a similar effect with the Azimuth parameter in terms of determining how to group fault sticks into the same fault.\n\nFor downsampled seismic data, the fault stick output will not be the same since the faults now will turn more rapidly on a voxel basis (since the downsampling has reduced the points that create the voxel grid). If the decimation is half, the user will need to decrease the Azimuth/Dip/Correlation Distance parameters and increase the Unstability Allowance."
+      ]
+    },
+    {
+      "tag": ["Fault-probability", "Fault probability"],
+      "patterns": [
+        "What is Fault probability?",
+        "Fault probability",
+        "What Fault probability  is",
+        "please let me know what is Fault probability?",
+        "introduce Fault probability ",
+        "introduce Fault probability  for me",
+        "explain Fault probability  for me",
+        "please tell me more about Fault probability",
+        "What does Fault probability  entail?",
+        "Define Fault probability .",
+        "Could you please explain Fault probability?",
+        "Provide insight into Fault probability, please.",
+        "Introduce me to Fault probability.",
+        "Could you explain Fault probability to me?",
+        "I would like to learn more about Fault probability."
+      ],
+      "responses": [
+        "Fault-probability-start determines the lowest probability a fault can start to be segmented from. The algorithm will try to track the strongest peak probabilities, but uses the 10x10x10 voxels surrounding the strongest probability to determine the direction to try to track along a 2D line until it reaches the value of the fault-probability-end.\n\nHigh values of the Fault Probability Start/End can result in shorter fault sticks, fewer sticks in a fault, or faults being completely missed (Figure below). However, if probability start & end values set too low may have the opposite effect.\n\nSince the Gaussian Half-Width directly affects the overall probability values in the probability scanner cube, the fault-probability start and fault-probability end must be be adjusted accordingly when the Gaussian Half-Width is changed."
+      ]
+    },
+    {
+      "tag": ["Correlation-Distance", "Correlation Distance", "Distance of Correlation"],
+      "patterns": [
+        "What is Correlation-Distance?",
+        "Correlation-Distance",
+        "What Correlation-Distance is",
+        "please let me know what is Correlation-Distance?",
+        "introduce Correlation-Distance",
+        "introduce Correlation-Distance for me",
+        "explain Correlation-Distance for me",
+        "please tell me more about Correlation-Distance",
+        "What does Correlation-Distance entail?",
+        "Define Correlation-Distance.",
+        "Could you please explain Correlation-Distance?",
+        "Provide insight into Correlation-Distance, please.",
+        "Introduce me to Correlation-Distance.",
+        "Could you explain Correlation-Distance to me?",
+        "I would like to learn more about Correlation-Distance.",
+        "What is Correlation Distance?",
+        "Correlation Distance",
+        "What Correlation Distance is",
+        "please let me know what is Correlation Distance?",
+        "introduce Correlation Distance",
+        "introduce Correlation Distance for me",
+        "explain Correlation Distance for me",
+        "please tell me more about Correlation Distance",
+        "What does Correlation Distance entail?",
+        "Define Correlation Distance.",
+        "Could you please explain Correlation Distance?",
+        "Provide insight into Correlation Distance, please.",
+        "Introduce me to Correlation Distance.",
+        "Could you explain Correlation Distance to me?",
+        "I would like to learn more about Correlation Distance."
+      ],
+      "responses": [
+        "The Correlation-Distance is the number of voxel units that must be similar in Dip direction to connect the fault sticks. This essentially determines whether a fault stick can be part of a fault in vertical space. If you have messy data, changing this parameter to be smaller will connect more faults. Use a larger value to avoid having disconnected or 'torn' faults.\n\nThis parameter has a similar effect with the Dip parameter in terms of determining how far a fault stick can extend in the dip direction."
+      ]
+    },
+    {
+      "tag": ["inference"],
+      "patterns": [
+        "inference",
+        "What is inference?",
+        "what inference is?",
+        "please let me know what inference is",
+        "please tell me more about inference term",
+        "explain inference for me"
+      ],
+      "responses": [
+        "Inference means the network's prediction."
+      ]
+    },
+    {
+      "tag": ["Inference Offset", "inference offset", "inference offset?"],
+      "patterns": [
+        "What is Inference Offset?",
+        "Inference Offset",
+        "inference offset?",
+        "use inference offset",
+        "How to use inference offset",
+        "may I know how is it possible to manage inference offset?",
+        "may I know how it IS possible to work with inference offset?",
+        "may I know how is it possible to set inference offset?",
+        "please tell me more about how to adjust inference offset",
+        "how can I work with  inference offset",
+        "How is it possible to set inference offset",
+        "please let me know what inference offset is",
+        "could you please explain inference offset for me?",
+        "What Inference Offset is",
+        "please let me know what is Inference Offset?",
+        "introduce Inference Offset",
+        "introduce Inference Offset for me",
+        "explain Inference Offset for me",
+        "please tell me more about Inference Offset",
+        "What does Inference Offset entail?",
+        "Define Inference Offset.",
+        "Could you please explain Inference Offset?",
+        "Provide insight into Inference Offset, please.",
+        "Introduce me to Inference Offset.",
+        "Could you explain Inference Offset to me?",
+        "I would like to learn more about Inference Offset."
+      ],
+      "responses": [
+        "You can use the inference offset to see the inference from a different line displayed on the current line. Inference offset is a inference projection tool that acts as a label quality control mechanism.\n\n<img>static/images/inferenceoffset.png</img>\n\nNote: Inference Offset can be used only when a deep learning layer is active. When multiple network inferences are displayed, the Inference Offset will work only on the active one.\n\nThe following example shows an inference offset of +40 from the current line of 4496.\n\n<img>static/images/inferenceoffsetexample.png</img>\n\nTo use inference offset, perform the following steps:\n\n\u2022 Activate the desired deep learning layer from an interpretation group.\n\u2022 Enter the offset value in the Interference Offset text field, or use the - and + buttons to adjust the offset value forward or backward by 1 line.\n\u2022 The inference from the offset you enter will be displayed on the current slice.\n\u2022 To reset the offset, click  Reset to revert the offset back to 0.\n\nNote: The inference offset is measured from the current line position; resetting the inference offset to 0 will re-display the inference from the current visible line."
+      ]
+    },
+    {
+      "tag": ["Plugin"],
+      "patterns": [
+        "What is Plugin?",
+        "What Plugin is",
+        "please let me know what is Plugin?",
+        "introduce Plugin",
+        "introduce Plugin for me",
+        "explain Plugin for me",
+        "please tell me more about Plugin",       
+        "What defines a Plugin?",
+        "Define Plugin.",
+        "Could you please explain what a Plugin is?",
+        "Provide an introduction to Plugins.",
+        "Could you introduce Plugins to me?",
+        "Can you explain what a Plugin is?",
+        "I would like to learn more about Plugins."
+      ],
+      "responses": [
+        "A plugin in the HueSpace system is a standalone piece of code that is loaded by HueSpace at runtime, and that can produce VDSs, Shapes or Properties."
+      ]
+    },
+
+
+
+    {
+      "tag": ["Input Masks", "Input Mask"],
+      "patterns": [
+        "What is Input Masks?",
+        "What Input Masks is",
+        "please let me know what is Input Masks?",
+        "introduce Input Maskss",
+        "introduce Input Masks for me",
+        "explain Input Masks for me",
+        "please tell me more about Input Masks",       
+        "What defines a Input Masks?",
+        "Define Input Masks.",
+        "Could you please explain what Input Masks is?",
+        "Provide an introduction to Input Masks.",
+        "Could you introduce Input Masks to me?",
+        "Can you explain what Input Masks is?",
+        "I would like to learn more about Input Masks.",
+        "How can I work with Input Masks?"
+      ],
+      "responses": [
+        "Input masks can be used to restrict training to a specific interval or to exclude certain features from the training of a different feature, for example, faulted zones using fault probability as the input mask. Stratigraphic zone isolation and generating faulted zone grids are two examples of effective use of input masks.\n\nThe workflow is:\n\n\u2022 Conduct a standard multiclass deep learning workflow to generate a Deep Learning layer to use as an input mask\n\u2022 Create a new deep learning layer and select the multiclass deep learning layer as an input mask. Turn ON the classes to use as a mask. When you view the new deep learning layer, the input mask will be applied to the visualized data as a gray overlay - data covered by this overlay will be excluded from the training process.\n\u2022 Train the model normally; when you check inference you will notice there are no predictions in the masked area.\n\n<img>static/images/inputmask1.png</img>\n\n<img>static/images/inputmask2.png</img>"
+      ]
+    },
+
+
+    {
+      "tag": ["Vertical Mask Layers", "Vertical Mask Layer", "Vertical Mask"],
+      "patterns": [
+        "What is Vertical Mask Layers?",
+        "What Vertical Mask Layers is",
+        "please let me know what is Vertical Mask Layers?",
+        "introduce Vertical Mask Layers",
+        "introduce Vertical Mask Layers for me",
+        "explain Vertical Mask Layers for me",
+        "please tell me more about Vertical Mask Layers",       
+        "What defines a Vertical Mask Layers?",
+        "Define Vertical Mask Layers.",
+        "Could you please explain what a Vertical Mask Layers is?",
+        "Provide an introduction to Vertical Mask Layers.",
+        "Could you introduce Vertical Mask Layers to me?",
+        "Can you explain what a Vertical Mask Layers is?",
+        "I would like to learn more about Vertical Mask Layers.",
+        "How can I work with Vertical Mask Layers?",
+        "How can I create Vertical Mask Layers?"
+      ],
+      "responses": [
+        "You can create and use a vertical mask to constrain learning to data inside the vertical mask polygon. The vertical mask will help the deep learning network to focus on the area of interest and produce better results and can significantly reduce the probability cube generation process time.\n\n1. Click + on the Static Data toolbar, or on the desired Static Data group to open the Create Layer dialog, and select Vertical Mask Layer from the pulldown.  \n\nNote: If you click + on the Static Data Toolbar, you can create a group that contains the vertical mask. Toggle the Create New Group and Static Group to ON, and type a Static Group Name. Otherwise, toggle Create New Group and Static Group to OFF (left) and a new group will not be created.\n\n<img>static/images/createvmlayer_564x435.png</img>\n\n2. Enter the desired layer name.\n\n3. If you want the mask to define the area to include, change the Mask toggle to Mask is outside region. To define the area you want to exclude, change the Mask toggle to Mask is inside region. This can be changed as you define the masks and draw the polygons. \n\n4. Click Apply Mask.\n\n5. The view will change to slice. The new mask layer will not be added to the Layers pane until the polygons are created and accepted.     \n\n6. The vertical mask layer definition tool will be active; use it like the fault tool to define the mask area. Click once to place the first anchor point, then again for successive points on the fault trace. Right-click to accept the points and the outline, or press CTRL+Z  to undo segments.\n\n<img>static/images/vertmask1_900x658.png</img>\n\nNote: You can draw multiple polygons. Overlapping polygons will be merged into one polygon. Polygons with intersecting lines may have unexpected results.\n\n7. You can select whether the mask includes or excludes the defined area by using the Mask toggle.\n<img>static/images/vminclude_418x404.png</img>\nMask includes selected area (dark pink) \n\n<img>static/images/vmexclude_429x408.png</img>\nMask excludes selected area (dark pink)\n\nIf you want the mask to define the area to include, change the Mask toggle to Mask is outside region. To define the area you want to exclude, change the Mask toggle to Mask is inside region. This can be changed as you define the masks and draw the polygons.\n\n8. Click Accept to accept the mask. The vertical mask layer is created and can be as a vertical mask for deep learning layers.\n\n9. You can update the mask by selecting the vertical mask layer, and adding or deleting the last polygon that was accepted. If you have multiple polygons, you can click Remove Last Polygon to remove the last polygon that was created in order. You can click Remove Last Polygon to remove as many polygons as is necessary. You can add new polygons as desired.\n<img>static/images/vertmask2_900x610.png</img>\n\n10. Click Accept to update the Vertical Mask after making your changes.\n\nTo apply the vertical mask, open the Layer Properties for the desired deep learning network, and select the desired mask to use in the Vertical Mask list."
+      ]
+    },
+
+    {
+      "tag": ["Create labels", "cerating labels", "createing label", "create label", "create a label", "draw label", "Creating Labels and Training the Network"],
+      "patterns": [
+        "How labels can be drawn",
+        "How can I draw labels",
+        "How is it possible to draw a label",
+        "How to create labels?",
+        "how do labels can be created",
+        "please let me know how to create labels in IAI?",
+        "Create labels?",
+        "introduce how to cretae labels",
+        "how can I create labels",
+        "is it possible to create labels",       
+        "Could you please explain how I can create a label?",
+        "How can I Create Labels and Train the Network",
+        ""
+
+      ],
+      "responses": [
+        "Labels can be drawn when a label layer or a Deep Learning layer is active. Label information for deep learning layers is stored in the linked label layer.\nLabel features using the appropriate tools. Paint simple initial labels on features that are well-imaged in the seismic, then add more complex labels using feedback from the deep learning layer.\nNote: When working on large datasets, the labeling may become slow. When this happens, the backend process is busy, but all commands from the labeling will be cached, and the Undo function may work unpredictably. Be patient when labeling large datasets or using Undo.\n\n<img>static/images/trainingfaults_900x422.png</img>\n\nFor best results, follow these recommendations:\n1. Make sure that the brush weight is not too heavy (wide) so that too much surrounding data is picked, or too light (narrow) so that not enough information on each side of the feature is labeled. The labels should capture event terminations on both sides of the feature to work optimally.\nNote: If you have overlapping labels, labeling using the Fault Picker and using CTRL-Z more than once may remove some of the intersections of the labels. You can paint any missing label using the Brush tool.\n2. Click the Training icon (<img>static/images/trainingicon.png</img>) to start training.\nTraining for layers with a large amount of labels or complex labeling can take up to one minute to initialize. The screen will show the progress bar as static until training is fully initialized. After the first epoch, training will speed up noticeably.\n3. A training progress bar will appear above the screen. when the training bar reaches the right end of the screen, it has completed a training epoch.\nNote: If the progress bar bounces back and forth but training will not start, turn training Off, wait a few seconds, then turn training back On. Training will only run if the network status indicator in the upper right corner of the UI is green. If the status indicator is yellow, that indicates the network is still busy computing inference or TensorFlow is not yet ready to run.\n4. Inference will be automatically displayed. It may take one to two epochs before inference displays.\nNote: If Inference does not display after 10 seconds, stop the training process and refresh the browser.\n5. You can refine the predictions by adding label information to or removing label information from accepted inference as appropriate.\nInference is accepted on a line-by-line basis, meaning that accepting the inference on an inline will convert the inference to labels on that line only, not throughout the entire volume. Use the labeling and editing tools to reinforce or remove parts of labels that were converted from the inference. The network will use the corrections as additional data points in training and will adjust the inferences appropriately.\nNote: Accepting inference is not recommended for networks training for faults or similar feature types.\n6. Once the inference is to your satisfaction, use the slider bar or direct entry to specify another line. Try to label lines with different seismic expression so that the network will have more data to train with.\nNote: The lines that have been labeled will display on the slider bar as green tick marks.\n7. Check different lines that do not have labels to see how accurate the network inferences are. Interact as appropriate with the inference to reinforce network learning."
+      ]
+    }
+  ]
+}
