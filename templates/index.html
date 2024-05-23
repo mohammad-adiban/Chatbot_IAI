@@ -149,13 +149,20 @@
             var userInput = document.getElementById("user-input");
             var chatBox = document.getElementById("chat-box");
             var message = userInput.value.trim();
-            
+    
             if (message) {
                 var userDiv = document.createElement("div");
                 userDiv.classList.add("message", "user-message");
                 userDiv.innerHTML = message;
                 chatBox.appendChild(userDiv);
-                
+    
+                // Display a temporary "writing..." message
+                var tempWritingDiv = document.createElement("div");
+                tempWritingDiv.classList.add("message", "bot-message");
+                tempWritingDiv.innerHTML = "Writing...";
+                chatBox.appendChild(tempWritingDiv);
+                chatBox.scrollTop = chatBox.scrollHeight;
+    
                 fetch("/query", {
                     method: "POST",
                     headers: {
@@ -165,29 +172,30 @@
                 })
                 .then(response => response.json())
                 .then(data => {
+                    // Remove the "writing..." message before displaying the bot response
+                    chatBox.removeChild(tempWritingDiv);
+    
                     var botMessageContainer = document.createElement("div");
                     botMessageContainer.classList.add("bot-message-container");
-                    
+    
                     var botIconDiv = document.createElement("div");
                     botIconDiv.classList.add("bot-icon");
                     var botIcon = document.createElement("span");
                     botIcon.textContent = "🤖";
                     botIconDiv.appendChild(botIcon);
                     botMessageContainer.appendChild(botIconDiv);
-                    
+    
                     var botDiv = document.createElement("div");
                     botDiv.classList.add("message", "bot-message");
-                    // Process response to replace custom <img> tags with actual <img> elements
-                    var processedResponse = data.response.replace(/<img>(.*?)<\/img>/g, function(match, url) {
-                        return '<img src="' + url + '" style="max-width:100%;">';
-                    });
-                    botDiv.innerHTML = processedResponse; 
-                    
+                    botDiv.innerHTML = data.response;
+    
                     botMessageContainer.appendChild(botDiv);
                     chatBox.appendChild(botMessageContainer);
                     chatBox.scrollTop = chatBox.scrollHeight;
                 })
                 .catch((error) => {
+                    // Remove the "writing..." message in case of error
+                    chatBox.removeChild(tempWritingDiv);
                     console.error('Error:', error);
                 });
     
@@ -206,6 +214,7 @@
             document.getElementById("logo").style.display = "block";
         };
     </script>
+    
     
 </body>
 </html>
